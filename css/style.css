@@ -1,4 +1,4 @@
-/* Reset */
+
 body , h1 , h2 , h3 , p , ul {
     padding: 0;
     margin: 0;
@@ -15,7 +15,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
 }
-/*Menu*/
+
 .menu {
     background-color: #252525;
     padding: 15px 0;
@@ -32,8 +32,7 @@ body {
 }
 .menu-logo {
     margin: 0 10px;
-    /*Primeiro parametro espaço superior e inferior*/
-    /*Segundo parametro espaço esquerda direita*/
+
 }
 .menu-nav ul{
     float: right;
@@ -43,7 +42,7 @@ body {
 .menu-nav ul li a{
     padding: 10px;
 }
-/*BANNER*/
+
 .intro{
     background-image: url(../IMG/bg-intro.jpg);
     padding: 150px 0;
@@ -69,7 +68,7 @@ body {
     background: #fff;
     margin: 10px auto;
 }
-/*SOBRE*/
+
 
 .sobre {
     padding: 60px 0;
@@ -109,7 +108,7 @@ body {
     top: -25px;
     padding: 5px 0 10px 0;
 }
-/* PRODUTOS */
+
 
 .produtos {
     background-color: #e7e4db;
@@ -180,7 +179,7 @@ h2.produtos-mineiro::before{
     margin-bottom: 40px;
 }
 
-.locais-img, .locais-info{
+.locais-img , .locais-info{
     flex:1;
     margin: 0 10px;
 }
