@@ -1,55 +1,67 @@
-
-body , h1 , h2 , h3 , p , ul {
+/* Reset */
+body, h1, h2, h3,p, ul{
     padding: 0;
     margin: 0;
 }
-body {
-    font-family: 'Georgia, serif';
-    color:#252525 ;
+body{
+    font-family: Gergia, serif;
+    color: #252525;
 }
 *{
     box-sizing: border-box;
 }
-.conteiner {
+.container{
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+   
 }
-
-.menu {
+/* Menu */
+.menu{
     background-color: #252525;
     padding: 15px 0;
 }
+
 .menu-nav a{
     text-decoration: none;
-    color: #ffff;
-    font-size: 1.25em;
+    color: #fff;
+    font-size: 1.125em;
 }
-.menu-nav {
+
+.menu-nav{
     flex: 1;
     margin: 0 10px;
     align-self: center;
-}
-.menu-logo {
-    margin: 0 10px;
 
 }
-.menu-nav ul{
+
+.menu-logo{
+    margin: 0 10px;
+    /* primeiro parametro espaço superior e inferior */
+    /* segundo parametro, espaço esquerda e direita */
+}
+
+.menu nav ul{
     float: right;
     display: flex;
     list-style: none;
 }
+
 .menu-nav ul li a{
     padding: 10px;
 }
 
+
+/* BANNER */
+
 .intro{
-    background-image: url(../IMG/bg-intro.jpg);
+    background-image: url(../img/bg-intro.jpg);
     padding: 150px 0;
     background-size: cover;
-    color: #ffff;
+    color: #fff;
     text-align: center;
 }
+
 .intro h1{
     text-transform: uppercase;
     font-size: 3em;
@@ -69,37 +81,39 @@ body {
     margin: 10px auto;
 }
 
+/* SOBRE */
 
-.sobre {
+.sobre{
     padding: 60px 0;
 }
-
-.sobre h2 {
-    font-size: 2,25em;
+.sobre h2{
+    font-size: 2.25em;
     text-align: center;
     margin-bottom: 60px;
 }
-.sobre-item {
+.sobre-item{
     flex: 1;
     margin: 0 10px;
 }
-.sobre > p{
-    font-size: 1.125em;
-    line-height: 1.4em;
-    font-style: italic;
-    margin: 20px auto;
-    max-width: 460px;
-    text-align: center;
+
+.sobre-item img{
+	display: block;
+	max-width: 100%;
 }
-.sobre-item img {
-    display: block;
-    max-width: 100%;
+.sobre > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 460px;
+	text-align: center;
 }
+
 .sobre-item h3{
     font-size: 2.25em;
     line-height: 1em;
     background-color: #252525;
-    color: #fff;
+    color: #FFF;
     font-style: italic;
     font-weight: normal;
     text-align: center;
@@ -108,17 +122,15 @@ body {
     top: -25px;
     padding: 5px 0 10px 0;
 }
-
-
-.produtos {
-    background-color: #e7e4db;
+/* PRODUTOS */
+.produtos{
+    background-color: #e7e4d8;
     padding: 60px 0;
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
 }
-
 .produtos-item{
-    flex: 1;
+    flex:1;
     margin: 0 10px 40px 10px;
 }
 
@@ -129,34 +141,32 @@ body {
 }
 
 .produtos-item p{
-    font-size: o.875em;
+    font-size: 0.875em;
     line-height: 1.4em;
 }
 
-.produtos-item h2::before {
+.produtos-item h2::before{
     content: '';
     display: block;
     width: 100px;
     height: 100px;
     background-color: currentColor;
     border-radius: 50%;
-    border: 5px solid #e7e4db;
-    box-shadow: 0 0 0 5px currentColor;
+    border: 5px solid #e7e4d8;
+    box-shadow:  0 0 0 5px currentColor;
     margin: 20px auto;
 }
 
 h2.produtos-paulista::before{
-    color: #492901
+    color: #492901;
 }
-
 h2.produtos-carioca::before{
-    color: #c17139
+    color: #c17139;
 }
 
 h2.produtos-mineiro::before{
-    color: #d7a54d
+    color: #d7a54d;
 }
-
 .produtos-btn{
     border: 3px solid #252525;
     color: #252525;
@@ -170,16 +180,16 @@ h2.produtos-mineiro::before{
     padding: 15px 0;
     margin: 20px auto;
 }
+/* Locaix */
 
 .locais{
     padding: 60px 0;
 }
-
 .locais-item{
     margin-bottom: 40px;
 }
 
-.locais-img , .locais-info{
+.locais-img, .locais-info{
     flex:1;
     margin: 0 10px;
 }
@@ -188,18 +198,18 @@ h2.produtos-mineiro::before{
     display: block;
     max-width: 100%;
 }
-
 .locais-item h2{
     font-size: 2.25em;
     margin-bottom: 20px;
 }
 
 .locais-item p{
-    font-size: 1.125em;
+    font-size: 1.135em;
     line-height: 1.4em;
     max-width: 320px;
     margin-bottom: 40px;
 }
+
 .locais-item a{
     font-size: 1.125em;
     text-transform: uppercase;
@@ -207,4 +217,62 @@ h2.produtos-mineiro::before{
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+.assine{
+    background-color: #e7e4d8;
+    padding: 30px 0;
+}
+.assine-info{
+    flex:1;
+    margin: 0 10px;
+}
+.assine-info h2{
+    font-size: 2.25em;
+}
+.assine-info p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+.assine form{
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.assine form label{
+    display: none;
+}
+.assine input{
+    flex:1;
+    align-self: flex-start;
+    padding: 10px;
+    background-color: #252525;
+    border: 3px solid #252525;
+    font-family: georgia, serif;
+    font-size: 1.5em;
+}
+.assine button{
+    flex:1;
+    align-self: flex-start;
+    padding: 13px;
+    background-color: #252525;
+    border: none;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.footer{
+    background-color: #d6d3c8;
+    padding: 40px 0;
+}
+.footer-img{
+    margin: 0 10px;
+    flex: 1;
+}
+.footer p{
+    font-size: 1.125em;
+    line-height: 1.4em;
 }
